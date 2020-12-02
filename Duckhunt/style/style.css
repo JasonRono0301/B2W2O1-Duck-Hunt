@@ -9,10 +9,14 @@ body{
     left: 200px;
 }
 
-.duck{
+#duck{
     position: absolute;
-    top: 0;
-    left: 100px;
+    top: 100px;
+    left: 550px;
+}
+
+#duck > img{
+    width: 150px;
 }
 
 
