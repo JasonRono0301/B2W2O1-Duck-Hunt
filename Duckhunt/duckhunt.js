@@ -22,7 +22,7 @@ function fly(direction){//De code voor de fly functie.
         duck.style.top = posTop + "px";
     }
 
-    if(direction  == "south"){
+    if(direction == "south"){
         if(posTop < 600){
             posTop = posTop + 50;
         }
@@ -32,9 +32,19 @@ function fly(direction){//De code voor de fly functie.
         duck.style.top = posTop + "px";
     }
 
+    if(direction == "east"){
+        if(posRight < 1050){
+            posRight = posRight + 50;
+        } 
+        else{
+            posRight = 500;
+        }
+        duck.style.left = posRight + "px";
+    }
 };
 
 //Roept de (fly) functie aan.
-//var timer = setInterval(fly,1000);
+var timer = setInterval(fly,100);
+
 
 
